@@ -11,10 +11,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'Job Finder';
-  employees;
+  employers;
  
   constructor(private http: HttpClient) {
-    this.http.get('http://localhost:3000/employees.json')
-      .subscribe(res => this.employees = res);
+    this.http.get('http://localhost:3000/employers.json')
+      .subscribe(res => this.employers = res);
   }
 }
