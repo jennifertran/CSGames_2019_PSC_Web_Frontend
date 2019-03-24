@@ -11,12 +11,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { JobMapComponent } from './job-map/job-map.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { JobDescComponent } from './job-desc/job-desc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    JobMapComponent
+    JobMapComponent,
+    JobDescComponent
   ],
   imports: [
     BrowserModule,
