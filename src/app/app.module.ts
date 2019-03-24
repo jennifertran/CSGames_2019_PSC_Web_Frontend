@@ -9,6 +9,8 @@ import { UiModule } from './ui/ui.module';
 import { ProfileComponent } from './profile/profile.component';
 import { JobMapComponent } from './job-map/job-map.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,10 @@ import { JobMapComponent } from './job-map/job-map.component';
     AppRoutingModule,
     routingModule,
     HttpClientModule,
-    UiModule
+    UiModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB9FuqZV5aznrocedzGO_b-G65vJJvAVC4'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
