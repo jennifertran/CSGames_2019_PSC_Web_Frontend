@@ -14,7 +14,9 @@ export class AppComponent {
   employers;
  
   constructor(private http: HttpClient) {
-    this.http.get('http://localhost:3000/employers.json')
-      .subscribe(res => this.employers = res);
+    // this.http.get('http://8cf744a8.ngrok.io/employers.json')
+    //   .subscribe(res => this.employers = res);
+
+    // console.log(this.employers)
   }
 }
