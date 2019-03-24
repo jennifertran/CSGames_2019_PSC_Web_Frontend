@@ -7,11 +7,13 @@ import {routingModule} from "./app.routing";
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { ProfileComponent } from './profile/profile.component';
+import { JobMapComponent } from './job-map/job-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    JobMapComponent
   ],
   imports: [
     BrowserModule,
