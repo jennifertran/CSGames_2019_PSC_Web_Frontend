@@ -17,12 +17,13 @@ export class JobMapComponent implements OnInit {
   latitude = 45.5017;
   longitude = -73.56;
   zoom: 8;
-  mapType = 'satellite';
+  mapType = 'terrain';
   title = 'Job Map';
   jobs;
   constructor(private http: HttpClient) { 
     this.http.get('http://8cf744a8.ngrok.io/jobs.json')
       .subscribe(res => this.jobs = res);
+    console.log(this.jobs);
   }
 
   ngOnInit() {
