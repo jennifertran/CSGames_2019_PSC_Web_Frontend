@@ -1,8 +1,31 @@
-<p>
-  job-map works!
-</p>
-<agm-map></agm-map>
 
-<ul>
-  <li *ngFor="let job of jobs">{{job}}</li>
-</ul>
+<!-- <agm-map></agm-map> -->
+<agm-map [latitude]='latitude' [longitude]='longitude' 
+      [mapTypeId]='mapType'>
+    </agm-map>
+
+
+<table mdbTable border="1">
+  <thead>
+    <tr>
+      <th>Job ID</th>
+      <th>English Description</th>
+      <th>French Description</th>
+      <th>Salary</th>
+      <th>Work Univers</th>
+      <th>Date Posted</th>
+      <th>Education Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr mdbTableCol *ngFor="let job of jobs">
+      <th scope="row">{{job.id}}</th>
+      <td>{{job.description_en}}</td>
+      <td>{{job.description_fr}}</td>
+      <td>{{job.salary}}</td>
+      <td>{{job.work_univers}}</td>
+      <td>{{job.date_posted}}</td>
+      <td>{{job.education_level}}</td>
+    </tr>
+  </tbody>
+</table>

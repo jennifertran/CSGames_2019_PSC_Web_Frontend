@@ -6,11 +6,6 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './job-map.component.html',
   styleUrls: ['./job-map.component.css'],
   styles: ['agm-map { height: 300px; /* height is required */ }'],
-  template: `
-    <agm-map [latitude]='latitude' [longitude]='longitude' 
-      [mapTypeId]='mapType'>
-    </agm-map>
-  `,
   providers: [HttpClient]
 })
 export class JobMapComponent implements OnInit {
@@ -22,8 +17,8 @@ export class JobMapComponent implements OnInit {
   jobs;
   constructor(private http: HttpClient) { 
     this.http.get('http://8cf744a8.ngrok.io/jobs.json')
-      .subscribe(res => this.jobs = res);
-    console.log(this.jobs);
+      .subscribe(res => { console.log(res);
+        this.jobs = res;});
   }
 
   ngOnInit() {
