@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, FormBuilder, Validators, AbstractControl, ValidatorFn} from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ApiService } from "../api.service";
 
@@ -11,21 +11,9 @@ import { ApiService } from "../api.service";
 })
 export class ProfileComponent implements OnInit {
 
-  customerForm = this.fb.group({
-    firstName: [''],
-    lastName: [''],
-    email: [''],
-    street: [''],
-    city: [''],
-    state: [''],
-    zip: [''],
-    country: [''],
-    canSendEmails: ['']
-  });
-
-
-  constructor(public api: ApiService, private router: Router, private fb: FormBuilder, private route: ActivatedRoute) { }
+  constructor(public api: ApiService) { }
 
   ngOnInit() {}
 
+  async nextForm() {}
 }

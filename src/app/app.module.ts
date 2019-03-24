@@ -7,6 +7,7 @@ import {routingModule} from "./app.routing";
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { ProfileComponent } from './profile/profile.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { JobMapComponent } from './job-map/job-map.component';
 
 import { AgmCoreModule } from '@agm/core';
