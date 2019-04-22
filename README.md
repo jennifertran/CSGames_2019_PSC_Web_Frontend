@@ -51,7 +51,7 @@ In order to help you start the PSC has provided a JSON data structure
 The following structures are proposed, you can change them if you need to.
 
 ### Candidate
-```json
+```
 [
    {
       "id": Interger,  // Unique ID
@@ -68,7 +68,7 @@ The following structures are proposed, you can change them if you need to.
 ```
 
 ### Job Posting
-```json
+```
 [
    {
       "id": Integer,  // Unique ID
@@ -84,7 +84,7 @@ The following structures are proposed, you can change them if you need to.
 ]
 ```
 ### Universe
-```json
+```
 [
    {
       "id": Integer, // Unique ID
@@ -93,7 +93,7 @@ The following structures are proposed, you can change them if you need to.
 ]
 ```
 ### Education
-```json
+```
 [
    {
       "id": Integer, // Unique ID
